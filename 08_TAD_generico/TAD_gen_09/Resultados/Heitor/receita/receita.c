@@ -7,6 +7,8 @@
 //typedef struct _Receita Receita;
 
 #define MAX_NOME 100
+#define MAX_MEDICO 100
+#define MAX_PACIENTE 100
 #define MAX_INSTRUCOES 200
 
 struct _Receita
@@ -63,10 +65,10 @@ Receita *leReceita(){
     char nomeMedico[MAX_NOME];
     char instrucoes[MAX_INSTRUCOES];
 
-    scanf(" %99[^\n]", nomeMedico);
-    scanf(" %99[^\n]", nomePaciente);
-    scanf(" %99[^\n]", nomeMedicamento);
-    scanf(" %199[^\n]", instrucoes);
+    scanf(" %99[^\n]\n", nomeMedico);
+    scanf(" %99[^\n]\n", nomePaciente);
+    scanf(" %99[^\n]\n", nomeMedicamento);
+    scanf(" %199[^\n]\n", instrucoes);
 
     Receita *novaReceita = criaReceita(nomeMedicamento, nomePaciente, nomeMedico, instrucoes);
     return novaReceita;
