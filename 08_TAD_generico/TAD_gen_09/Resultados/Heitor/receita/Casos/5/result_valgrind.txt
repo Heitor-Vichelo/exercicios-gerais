@@ -1,0 +1,102 @@
+==163390== Memcheck, a memory error detector
+==163390== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==163390== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==163390== Command: Resultados/Heitor/receita/prog Resultados/Heitor/receita/Casos/5
+==163390== Parent PID: 163389
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F229: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D06: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D06: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F229: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D6E: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D6E: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E23: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E23: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E68: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E68: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F229: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D28: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D28: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F229: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D4B: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109D4B: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E3A: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E3A: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E51: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 
+==163390== Conditional jump or move depends on uninitialised value(s)
+==163390==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==163390==    by 0x109E51: criaReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109F28: leReceita (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390==    by 0x109AD2: main (in /home/hrvichelo/Downloads/exercicios-gerais/08_TAD_generico/TAD_gen_09/Resultados/Heitor/receita/prog)
+==163390== 

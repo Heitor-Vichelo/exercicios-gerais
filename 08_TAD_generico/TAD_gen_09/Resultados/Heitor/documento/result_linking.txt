@@ -1,0 +1,9 @@
+/usr/bin/ld: Resultados/Heitor/documento/fila_imp.o: in function `desalocaFilaImp':
+fila_imp.c:(.text+0x6a): undefined reference to `desalocaDocumento'
+/usr/bin/ld: Resultados/Heitor/documento/fila_imp.o: in function `insereDocumentoFilaImp':
+fila_imp.c:(.text+0xdc): undefined reference to `criaDocumento'
+/usr/bin/ld: Resultados/Heitor/documento/fila_imp.o: in function `precoTotalImpressaoFilaImp':
+fila_imp.c:(.text+0x1a1): undefined reference to `calculaPrecoImpressaoDocumento'
+/usr/bin/ld: Resultados/Heitor/documento/fila_imp.o: in function `imprimeFilaImp':
+fila_imp.c:(.text+0x1fe): undefined reference to `imprimeDocumento'
+collect2: error: ld returned 1 exit status
