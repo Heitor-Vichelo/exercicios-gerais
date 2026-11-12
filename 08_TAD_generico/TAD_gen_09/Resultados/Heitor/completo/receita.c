@@ -6,17 +6,18 @@
 
 //typedef struct _Receita Receita;
 
-#define MAX_NOME 100
 #define MAX_MEDICO 100
+#define MAX_MEDICAMENTO 100
 #define MAX_PACIENTE 100
 #define MAX_INSTRUCOES 200
 
 struct _Receita
 {
-    char *nomeMedicamento;
-    char *nomePaciente;
-    char *nomeMedico;
-    char *instrucoes;
+    char nomeMedicamento[MAX_MEDICAMENTO];
+    char nomePaciente[MAX_PACIENTE];
+    char nomeMedico[MAX_MEDICO];
+    char instrucoes[MAX_INSTRUCOES];
+    int qtdCaracteres;
 };
 
 Receita *criaReceita(char *nomeMedicamento, char *nomePaciente, char *nomeMedico, char *instrucoes){
@@ -27,27 +28,14 @@ Receita *criaReceita(char *nomeMedicamento, char *nomePaciente, char *nomeMedico
     Receita *r = (Receita*) calloc(1,sizeof(struct _Receita));
     if(!r) exit(0);
 
-    // aloca memoria para cada campo da receita
-    r->nomeMedicamento = (char*) malloc(strlen(nomeMedicamento)+1);
-    r->nomePaciente = (char*) malloc(strlen(nomePaciente)+1);
-    r->nomeMedico = (char*) malloc(strlen(nomeMedico)+1);
-    r->instrucoes = (char*) malloc(strlen(instrucoes)+1);
-
-    // verifica se nao conseguiu alocar memoria para alguns dos campos, se nao exit(0)
-    if(!r->instrucoes || !r->nomeMedicamento || !r->nomeMedico || !r->nomePaciente){
-        free(r->nomeMedicamento);
-        free(r->nomePaciente);
-        free(r->nomeMedico);
-        free(r->instrucoes);
-        free(r);
-        exit(0);
-    }
-
     // copia os parametros para o campo e retorna o novo relatorio
     strcpy(r->nomeMedicamento, nomeMedicamento);
     strcpy(r->nomePaciente, nomePaciente);
     strcpy(r->nomeMedico, nomeMedico);
     strcpy(r->instrucoes, instrucoes);
+
+    // Ja disponibilizo a quantidade de caracteres para a struct
+    r->qtdCaracteres = strlen(r->nomeMedicamento) + strlen(r->nomePaciente) + strlen(r->nomeMedico) + strlen(r->instrucoes);
 
     return r;
 }
@@ -60,29 +48,27 @@ TOMAR EM CASO DE DOR A CADA 12H (instruções para uso do medicamento)
 */
 
 Receita *leReceita(){
-    char nomeMedicamento[MAX_NOME];
-    char nomePaciente[MAX_NOME];
-    char nomeMedico[MAX_NOME];
+    char nomeMedicamento[MAX_MEDICAMENTO];
+    char nomePaciente[MAX_PACIENTE];
+    char nomeMedico[MAX_MEDICO];
     char instrucoes[MAX_INSTRUCOES];
 
-    scanf(" %99[^\n]\n", nomeMedico);
-    scanf(" %99[^\n]\n", nomePaciente);
-    scanf(" %99[^\n]\n", nomeMedicamento);
-    scanf(" %199[^\n]\n", instrucoes);
+    scanf(" %[^\n]\n", nomeMedico);
+    scanf(" %[^\n]\n", nomePaciente);
+    scanf(" %[^\n]\n", nomeMedicamento);
+    scanf(" %[^\n]\n", instrucoes);
 
     Receita *novaReceita = criaReceita(nomeMedicamento, nomePaciente, nomeMedico, instrucoes);
     return novaReceita;
 }
 
 float calculaPrecoImpressaoReceita(void *dado, float precoCaractere){
-    int tam = 0;
     Receita *r = (Receita*) dado;
-    tam += strlen(r->instrucoes) + strlen(r->nomeMedicamento) + strlen(r->nomeMedico) + strlen(r->nomePaciente);
-    
-    return tam*precoCaractere;
+    if(!r) return 0;
+    return r->qtdCaracteres*precoCaractere;
 }
 
-/*
+/* FORMATO DE SAIDA
 - - RECEITA - -
 MEDICAMENTO: IBUPROFENO 400MG
 PACIENTE: MARIA FERNANDA
@@ -102,9 +88,5 @@ void imprimeReceita(void *dado){
 
 void desalocaReceita(void *dado){
     Receita *r = (Receita*) dado;
-    free(r->instrucoes);
-    free(r->nomeMedicamento);
-    free(r->nomeMedico);
-    free(r->nomePaciente);
     free(r);
 }
