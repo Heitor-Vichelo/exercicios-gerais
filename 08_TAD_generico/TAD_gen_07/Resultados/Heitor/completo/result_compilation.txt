@@ -1,0 +1,7 @@
+imagem.c: In function ‘LerImagem’:
+imagem.c:52:19: warning: format ‘%d’ expects argument of type ‘int *’, but argument 4 has type ‘Tipo *’ [-Wformat=]
+   52 |     scanf("%d %d %d", &altura, &largura, &tipo);
+      |                  ~^                      ~~~~~
+      |                   |                      |
+      |                   int *                  Tipo *
+      |                  %d
